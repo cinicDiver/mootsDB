@@ -4,7 +4,7 @@ import pandas as pd
 import sqlite3
 
 # Definicion de encabezados
-hoja=pd.read_excel(".\datos\encabezados.xlsx")
+hoja=pd.read_excel("./datos/encabezados.xlsx")
 df=pd.DataFrame(hoja.values)
 df.columns=df.iloc[0,:]
 df.drop(df.index[0],inplace=True)

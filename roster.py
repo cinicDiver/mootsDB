@@ -8,7 +8,7 @@ def version():
 
 def lista_jugadores()->list:
     todos=[]
-    conn=sqlite3.connect(".\mootsRost.sqlite")
+    conn=sqlite3.connect(".\\mootsRost.sqlite")
     cur=conn.cursor()
     cur.execute("SELECT nombres, apellidos, id FROM Jugadores WHERE activo = 1")
     obt=cur.fetchall()

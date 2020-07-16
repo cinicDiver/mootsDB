@@ -2,7 +2,7 @@ from tkinter import *
 import datetime
 import time
 import roster
-import ventanas
+#import ventanas
 
 # Ventana principal
 fecha=datetime.date.today()
@@ -30,7 +30,7 @@ loghoy=["Se inició la aplicación el {}".format(fecha),"Versión {}".format(ver
 def agregar_log(entrada):
     loghoy.append(entrada)
     panLog.insert(END,entrada)
-def venAgregar()->None:
+""" def venAgregar()->None:
     agregar_log("Se quiere agregar un nuevo jugador.")
     disp=roster.numeros()
     eps=roster.eps()
@@ -51,7 +51,7 @@ def borrar_jugador():
     if idd != -1:
         res=roster.borrar_jugador(idd)
         agregar_log(res)
-    else: agregar_log("Cancelado por el usuario.")
+    else: agregar_log("Cancelado por el usuario.") """
 
 
 # Panel superior
@@ -101,11 +101,11 @@ def actualizar():
 
 
 #Panel inferior
-ag=Button(abajo,text="Agregar Jugador",command=venAgregar)
-ag2=Button(abajo,text="Agregar con formato",command=agregar_formato)
+ag=Button(abajo,text="Agregar Jugador")#,command=venAgregar)
+ag2=Button(abajo,text="Agregar con formato")#,command=agregar_formato)
 buj=Button(abajo,text="Buscar Jugador")
 buc=Button(abajo,text="Buscar por criterio")
-boj=Button(abajo,text="Borrar Jugador",command=borrar_jugador)
+boj=Button(abajo,text="Borrar Jugador")#,command=borrar_jugador)
 act=Button(abajo,text="Actualizar lista",command=actualizar)
 bob=Button(abajo,text="Borrar base de datos")
 
