@@ -8,7 +8,7 @@ def version():
 
 def lista_jugadores()->list:
     todos=[]
-    conn=sqlite3.connect("mootsRost.sqlite")
+    conn=sqlite3.connect(".\\mootsRost.sqlite")
     cur=conn.cursor()
     cur.execute("SELECT nombres, apellidos, id FROM Jugadores WHERE activo = 1")
     obt=cur.fetchall()
@@ -22,7 +22,7 @@ def lista_jugadores()->list:
 
 def lista_cumple(fecha:datetime)->list:
     lista=[]
-    conn=sqlite3.connect("mootsRost.sqlite")
+    conn=sqlite3.connect(".\\mootsRost.sqlite")
     cur=conn.cursor()
     cur.execute("SELECT nombres,apellidos,nacimiento FROM Jugadores")
     obt=cur.fetchall()
@@ -41,7 +41,7 @@ def lista_cumple(fecha:datetime)->list:
 def activos()->tuple:
     cantidad=0
     total=0
-    conn=sqlite3.connect("mootsRost.sqlite")
+    conn=sqlite3.connect(".\\mootsRost.sqlite")
     cur=conn.cursor()
     cur.execute("SELECT activo FROM Jugadores")
     lista=cur.fetchall()
@@ -54,7 +54,7 @@ def activos()->tuple:
     return resp
 
 def numeros():
-    conn=sqlite3.connect("E:\\backup\\documents\\mootsDB\\mootsRost.sqlite")
+    conn=sqlite3.connect(".\\mootsRost.sqlite")
     cur=conn.cursor()
     cur.execute("SELECT numero FROM Jugadores WHERE activo = 1")
     x=cur.fetchall()
@@ -64,7 +64,7 @@ def numeros():
     return lista
 
 def eps():
-    conn=sqlite3.connect("mootsRost.sqlite")
+    conn=sqlite3.connect(".\\mootsRost.sqlite")
     cur=conn.cursor()
     cur.execute('SELECT tipo FROM Rh')
     x=cur.fetchall()
@@ -84,14 +84,14 @@ def nuevo_jugador(jnuevo):
             msg="El jugador no puede ser agregado. 'ndoc = -1'"
         else:
             # Definicion de encabezados
-            hoja=pd.read_excel("E:\\backup\\documents\\mootsDB\\datos\\encabezados.xlsx")
+            hoja=pd.read_excel(".\\datos\\encabezados.xlsx")
             df=pd.DataFrame(hoja.values)
             df.columns=df.iloc[0,:]
             df.drop(df.index[0],inplace=True)
             df.drop(df.columns[[0]],axis=1,inplace=True)
             heads=df.columns.values
             try:
-                conn=sqlite3.connect("mootsRost.sqlite")
+                conn=sqlite3.connect(".\\mootsRost.sqlite")
                 cur=conn.cursor()
             except:
                 conn=None
@@ -190,7 +190,7 @@ def nuevos_formato(ubic,num):
     if listaJug is not None:
         for jugador in listaJug:
             try:
-                conn=sqlite3.connect("E:\\backup\\documents\\mootsDB\\mootsRost.sqlite")
+                conn=sqlite3.connect(".\\mootsRost.sqlite")
                 cur=conn.cursor()
             except:
                 msg.append("Existe algún error en la base de datos")
@@ -261,7 +261,7 @@ def nuevos_formato(ubic,num):
 def borrar_jugador(idd):
     msg=""
     try:
-        conn=sqlite3.connect("E:\\backup\\documents\\mootsDB\\mootsRost.sqlite")
+        conn=sqlite3.connect(".\\mootsRost.sqlite")
         cur=conn.cursor()
         try:
             print(idd)
