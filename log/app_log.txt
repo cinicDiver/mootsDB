@@ -1,1 +1,45 @@
 Ingreso a la app. (17/07/2020 04:03:42)
+Ingreso a la app. (25/07/2020 13:54:07)Ingreso a la app. (25/07/2020 14:23:09)
+Se quiere utilizar la lista de instalación para actualizar los módulos disponibles. (25/07/2020 14:23:11)
+pandas se encuentra correctamente instalada.
+numpy se encuentra correctamente instalada.
+matplotlib se encuentra correctamente instalada.
+xlrd se encuentra correctamente instalada.
+Ingreso a la app. (25/07/2020 14:24:59)
+Ingreso a la app. (25/07/2020 14:25:22)
+Ingreso a la app. (25/07/2020 14:26:36)
+Ingreso a la app. (25/07/2020 14:39:35)
+Ingreso a la app. (25/07/2020 14:48:15)
+Ingreso a la app. (25/07/2020 14:50:02)
+Ingreso a la app. (25/07/2020 14:50:47)
+Ingreso a la app. (25/07/2020 14:51:34)
+Se quiere utilizar la lista de instalación para actualizar los módulos disponibles. (25/07/2020 14:53:20)
+pandas se encuentra correctamente instalada.
+numpy se encuentra correctamente instalada.
+matplotlib se encuentra correctamente instalada.
+xlrd se encuentra correctamente instalada.
+Se quiere agregar el módulo sqlite3 a la lista de instalación. (25/07/2020 14:53:27)
+Se quiere utilizar la lista de instalación para actualizar los módulos disponibles. (25/07/2020 14:53:31)
+pandas se encuentra correctamente instalada.
+numpy se encuentra correctamente instalada.
+matplotlib se encuentra correctamente instalada.
+xlrd se encuentra correctamente instalada.
+sqlite3 se encuentra correctamente instalada.
+sqlite3 tuvo un error de intalación: Subprocess returncode(>1) 'error'
+Ingreso a la app. (25/07/2020 14:53:52)
+Se quiere utilizar la lista de instalación para actualizar los módulos disponibles. (25/07/2020 14:53:53)
+pandas se encuentra correctamente instalada.
+numpy se encuentra correctamente instalada.
+matplotlib se encuentra correctamente instalada.
+xlrd se encuentra correctamente instalada.
+scipy se encuentra correctamente instalada.
+sqlite3 se encuentra correctamente instalada.
+sqlite3 tuvo un error de intalación: Subprocess returncode(>1) 'error'
+Ingreso a la app. (25/07/2020 14:57:56)
+Ingreso a la app. (25/07/2020 15:05:14)
+Ingreso a la app. (25/07/2020 15:06:27)
+Ingreso a la app. (25/07/2020 15:08:35)
+Ingreso a la app. (25/07/2020 15:08:57)
+Ingreso a la app. (25/07/2020 15:11:06)
+Ingreso a la app. (25/07/2020 15:12:18)
+Ingreso a la app. (25/07/2020 15:13:20)

@@ -17,3 +17,8 @@ El controlador tiene una variable que direcciona al log de la aplicación. </br>
 El controlador tiene una función que agrega acciones al log de la aplicación. </br>
 Se creó una librería que chequéa la existencia de librerías no integradas. </br>
 los botones de revisión de estado y revisión de librerías son funcionales y registran sus acciones en el log. </br>
+--25/07/2020 15:30 </br>
+Se editó el lector de librerías para manjear lineas vacías en el archivo. </br>
+Se creó una carpeta para almacenar los archivos sql y se editó el método de chequeo. </br>
+Se creó un nuevo archivo para el diesño de la página principal y se inició el sistema de cambio entre ventanas. </br>
+-------------Interrupción de la conexión a internet en la zona---------------- </br>

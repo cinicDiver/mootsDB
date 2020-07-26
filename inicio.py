@@ -24,7 +24,7 @@ class ventana_inicio(tk.Frame):
         btnBDB=tk.Button(lbfDB,text="Borrar",width=10)
 
         lbfinf=tk.LabelFrame(self,text="Aplicación")
-        btnIAP=tk.Button(lbfinf,text="Iniciar",width=10)
+        btnIAP=tk.Button(lbfinf,text="Iniciar",width=10,command=lambda:self.controller.show_frame('PgPrinc'))
         btnLAP=tk.Button(lbfinf,text="Ver Log",width=10,command=lambda:self.show_log())
 
         lbfst=tk.LabelFrame(self,text="Revisión")
@@ -82,9 +82,10 @@ class ventana_inicio(tk.Frame):
         state_view.insert(tk.END,"mootsDB: "+self.db_state+"\n")
         state_view.insert(tk.END,"--Estado de los Módulos:-- \n")
         for k,v in self.lib_state.items():
-            if(v):stt="OK"
-            else:stt="Uninstalled"
-            state_view.insert(tk.END,k+": "+stt+""+"\n")
+            if v is not None or v != "":
+                if(v):stt="OK"
+                else:stt="Uninstalled"
+                state_view.insert(tk.END,k+": "+stt+""+"\n")
         state_view.pack(side=tk.TOP,fill=tk.BOTH)
         btnk=tk.Button(state_win,text="Cerrar",command=lambda:state_win.destroy())
         btnk.pack(side=tk.BOTTOM,fill=tk.BOTH)

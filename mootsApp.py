@@ -3,6 +3,7 @@ import tkinter as tk
 import tkinter.font as tkf
 import datetime as dt
 import inicio as pgi
+import principal as pgp
 
 class mootsApp(tk.Tk):
     def __init__(self,*args,**kwargs):
@@ -17,7 +18,7 @@ class mootsApp(tk.Tk):
 
         self.frames={}
         self.frames['PgInicio']=pgi.ventana_inicio(container,self,self.check_for_db())
-        #self.frames['PgInfo']= --Ubicar la página principal de información--
+        self.frames['PgPrinc']= pgp.ventana_principal(container,self,self.check_for_db())
 
         self.show_frame('PgInicio')
     
@@ -30,7 +31,7 @@ class mootsApp(tk.Tk):
         self.frames['PgInicio']=pgi.ventana_inicio(container,self,self.check_for_db())
     
     def check_for_db(self):
-        check=os.path.exists(".\\mootsRost.sqlite")
+        check=os.path.isfile(".\DBs\mootsRost.sqlite")
         if(check):
             check="OK"
         else:
