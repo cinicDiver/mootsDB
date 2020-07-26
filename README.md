@@ -22,3 +22,6 @@ Se editó el lector de librerías para manjear lineas vacías en el archivo. </b
 Se creó una carpeta para almacenar los archivos sql y se editó el método de chequeo. </br>
 Se creó un nuevo archivo para el diesño de la página principal y se inició el sistema de cambio entre ventanas. </br>
 -------------Interrupción de la conexión a internet en la zona---------------- </br>
+--26/07/2020 14:00 </br>
+Se editó el cambio entre ventanas y es funcional </br>
+Se agregaron widgets mínimos para la visualización de la ventana principal </br>

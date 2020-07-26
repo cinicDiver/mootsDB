@@ -23,8 +23,11 @@ class mootsApp(tk.Tk):
         self.show_frame('PgInicio')
     
     def show_frame(self, page_nm):
+        for frame in self.frames.values():
+            frame.grid_remove()
         frame=self.frames[page_nm]
-        frame.tkraise()
+        frame.grid()
+        frame.winfo_toplevel().geometry("")
     
     def commit_txt(self,container):
         self.frames['PgInicio'].destroy()

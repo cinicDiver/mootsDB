@@ -8,8 +8,7 @@ import lib_check
 class ventana_inicio(tk.Frame):
 
     def __init__(self,parent,controller,dbs):
-        tk.Frame.__init__(self,controller)
-        self.pack()
+        tk.Frame.__init__(self,parent)
         self.controller=controller
         self.db_state=dbs
         self.lib_state=lib_check.check_lib_install()
@@ -24,7 +23,7 @@ class ventana_inicio(tk.Frame):
         btnBDB=tk.Button(lbfDB,text="Borrar",width=10)
 
         lbfinf=tk.LabelFrame(self,text="Aplicación")
-        btnIAP=tk.Button(lbfinf,text="Iniciar",width=10,command=lambda:self.controller.show_frame('PgPrinc'))
+        btnIAP=tk.Button(lbfinf,text="Iniciar",width=10,command=lambda:controller.show_frame('PgPrinc'))
         btnLAP=tk.Button(lbfinf,text="Ver Log",width=10,command=lambda:self.show_log())
 
         lbfst=tk.LabelFrame(self,text="Revisión")
